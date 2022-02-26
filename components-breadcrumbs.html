@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Contact - NiceAdmin Bootstrap Template</title>
+  <title>Components / Breadcrumbs - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -281,10 +281,10 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
             <a href="components-alerts.html">
               <i class="bi bi-circle"></i><span>Alerts</span>
@@ -301,7 +301,7 @@
             </a>
           </li>
           <li>
-            <a href="components-breadcrumbs.html">
+            <a href="components-breadcrumbs.html" class="active">
               <i class="bi bi-circle"></i><span>Breadcrumbs</span>
             </a>
           </li>
@@ -467,7 +467,7 @@
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link " href="pages-contact.html">
+        <a class="nav-link collapsed" href="pages-contact.html">
           <i class="bi bi-envelope"></i>
           <span>Contact</span>
         </a>
@@ -508,92 +508,147 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Contact</h1>
+      <h1>Breadcrumbs</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Pages</li>
-          <li class="breadcrumb-item active">Contact</li>
+          <li class="breadcrumb-item">Components</li>
+          <li class="breadcrumb-item active">Breadcrumbs</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section contact">
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
 
-      <div class="row gy-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Default Breadcrumbs</h5>
 
-        <div class="col-xl-6">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Default</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="info-box card">
-                <i class="bi bi-geo-alt"></i>
-                <h3>Address</h3>
-                <p>A108 Adam Street,<br>New York, NY 535022</p>
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Centered</h5>
+
+              <nav class="d-flex justify-content-center">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Centered Position</li>
+                </ol>
+              </nav>
             </div>
-            <div class="col-lg-6">
-              <div class="info-box card">
-                <i class="bi bi-telephone"></i>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Right Positioned</h5>
+
+              <nav class="d-flex justify-content-end">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Right Position</li>
+                </ol>
+              </nav>
             </div>
-            <div class="col-lg-6">
-              <div class="info-box card">
-                <i class="bi bi-envelope"></i>
-                <h3>Email Us</h3>
-                <p>info@example.com<br>contact@example.com</p>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="info-box card">
-                <i class="bi bi-clock"></i>
-                <h3>Open Hours</h3>
-                <p>Monday - Friday<br>9:00AM - 05:00PM</p>
-              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">With Home Icon</h5>
+
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Default</li>
+                </ol>
+              </nav>
             </div>
           </div>
 
         </div>
 
-        <div class="col-xl-6">
-          <div class="card p-4">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
+        <div class="col-lg-6">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Breadcrumbs with a page title</h5>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
+              <div class="pagetitle">
+                <h1>Page Title</h1>
+                <nav>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item">Components</li>
+                    <li class="breadcrumb-item active">Breadcrumbs</li>
+                  </ol>
+                </nav>
+              </div><!-- End Breadcrumbs with a page title -->
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
+            </div>
+          </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Breadcrumbs with different dividers</h5>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              <nav style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Data</li>
+                </ol>
+              </nav>
 
-                  <button type="submit">Send Message</button>
-                </div>
+              <nav style="--bs-breadcrumb-divider: '|';">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Data</li>
+                </ol>
+              </nav>
 
-              </div>
-            </form>
+              <nav style="--bs-breadcrumb-divider: '-';">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Data</li>
+                </ol>
+              </nav>
+
+              <nav style="--bs-breadcrumb-divider: '•';">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Data</li>
+                </ol>
+              </nav>
+
+              <nav style="--bs-breadcrumb-divider: '';">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active">Data</li>
+                </ol>
+              </nav>
+
+            </div>
           </div>
 
         </div>
-
       </div>
-
     </section>
 
   </main><!-- End #main -->
